@@ -1,0 +1,68 @@
+﻿PKHeX - By Kaphotics
+http://projectpokemon.org/pkhex/
+
+23/04/06 - New Update:
+ - Legality:
+ - - Changed: Vivillon 3DS Region handling reworked to handle all regions. Thanks @abcboy101!
+ - - Fixed: BDSP footprint ribbon now checks correctly.
+ - - Fixed: Gen4 Pokéwalker course captures are now allowed for all versions.
+ - Added: PKM Editor now shows the elemental type for Moves.
+ - Added: PKM Editor now shows affixed ribbon (or if one can be affixed) on the cosmetic tab.
+ - Added: Click the affixed ribbon indicator to open the ribbon editor (same as button).
+ - Added: Click a ribbon sprite in the ribbon editor to quickly affix it.
+ - Added: SV enrollment date can now be changed via Block Editor. Thanks @foohyfooh!
+ - Added: More Gen3 Mystery Gift API functionality added. Thanks @Bl4ckSh4rk!
+ - Fixed: Importing Mystery Gifts to the SaveFile's Mystery Gift list GUI's 11th slot now works as intended.
+ - Fixed: Gen4 Manaphy Egg now generates correctly from the Encounter Database.
+ - Fixed: Gen4/5 Country/Region no longer throws an error for certain countries.
+ - Fixed: Gen1/2 stats now calc correctly (perfect square-root EVs)
+ - Changed: Updated handling to correctly generate and verify size of WC9 entities.
+ - Changed: More performance improvements reducing allocations.
+
+23/02/27 - New Update: (186209) [6556318]
+ - Added: Support for S/V 1.2.0
+ - Added: SV style menu sprites for all species/forms. Thanks @sora10pls & @SciresM!
+ - Added: Gen5 Black/White City data can now be imported/exported, and Roamer status can be reset. Thanks @frefire!
+ - Added: Gen4/5 Geonet Location save file settings can now be viewed/changed. Thanks @abcboy101!
+ - Added: Gen4 Ranch now supports Toys from the Platinum game update. Thanks @Zazsona!
+ - Fixed: PKMEditor sidebar tab scaling now works on operating systems with scaling > 1. Thanks @Manu098vm!
+ - Fixed: Batch Editor string screening (ex. requesting ".Species=Pikachu" instead of 25) now works again.
+ - Fixed: Nature stat amplification clicks on the Stats tab now alters the amps correctly.
+ - Fixed: Update Available link now works as intended on .NET 7
+ - Fixed: Gen6 X/Y Pokéflute is no longer removed from Key Items as it can temporarily exist.
+ - Fixed: Gen5 C-Gear Skins now read/write correctly (again).
+ - Fixed: Gen3 Colosseum save files now generate valid savedata hashes on export.
+ - Fixed: Gen2 OT Names now edit save correctly when edited. Thanks @Zazsona!
+ - Changed: Shiny Sprite icon now shows as a larger icon, with Xor0 being subtly different. Thanks @Lusamine!
+ - Changed: GUI Translations updated. Thanks @ppllouf, @wubinwww, @mi-ya1987, @Manu098vm!
+ - Accessibility:
+   A few changes have been made to assist screen readers, notably:
+   PictureBox slots representing data (Pokémon, Mystery Gifts, etc) now draw a focus border, and can be tabbed between.
+   The focus border can be disabled via settings by setting the indentation to -1.
+   Added accessibility narration strings for specific controls.
+
+23/01/30 - New Update: (153698) [6370109]
+ - Fixed: Mystery Gift files now recognize via extension correctly.
+ - Fixed: Gen9 Pokédex bitflag get/set fixed (remapped species ID).
+ - Changed: GUI translations updated. Thanks @ppllouf, @riruo, @mi-ya1987 !
+
+23/01/26 - New Update: (33425) [6216411]
+ - Changed: PKHeX now uses .NET 7 for its runtime (updated from .NET Framework 4.6)!
+ - - Requires Windows 64bit operating system, with the .NET Desktop Runtime 7.0.x
+ - - https://dotnet.microsoft.com/en-us/download/dotnet/7.0
+ - - For those wanting to run the program from a Mac/Linux machine, use a Windows VM. No more mono/wine support.
+ - - This change results in a faster program, and being able to write more modern & extensible C# code.
+ - Changed: The Main Window layout has been adjusted for better GUI scaling support:
+ - - PKM Editor now uses vertical tabs, and some controls have moved to more appropriate tabs.
+ - - PKM Editor now has a "Cosmetic" tab, which contains low significance values like Contest Stats.
+ - - PKM Editor now has a simple selector for Handling Trainer selection rather than the background highlights.
+ - Legality:
+ - - Fixed: A few recognition bugs have been fixed. Thanks @Lorenzooone!
+ - Batch Editor:
+ - - Added: Batch Editor can now filter with >/≥ and </≤ operators, improved from just != and =.
+ - - Added: Ribbon and Mark count properties added. Can now sort boxes by these counts!
+ - - Changed: TID/SID properties renamed; when using 16-bit trainer IDs, use TID16/SID16.
+ - Changed: Gen9 S/V no longer show the Square Shiny icon, as Xor0 no longer indicates differently in-game.
+ - Changed: Gen9 S/V raid parameter editor "Set All 6 Star" changed to "Copy current values to Other Raids".
+ - Changed: With the update to .NET 7, some features have been rewritten for better performance, or for better usage.
+ - Changed: GUI translations updated. Thanks @Manu098vm, @Kitcham, @easyworld, @jimmyorz, @Bl4ckSh4rk, @ppllouf, @butaneeeee!
