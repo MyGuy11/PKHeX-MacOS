@@ -5,6 +5,7 @@
     <TargetFramework>net7.0-windows</TargetFramework>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <UseWindowsForms>true</UseWindowsForms>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
   </PropertyGroup>
 
   <PropertyGroup>
